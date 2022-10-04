@@ -17,10 +17,10 @@ public class CurrencyCnt {
         // 25,000원을 5만원으로 남았을 때의 몫, 나머지
         // 25,000원을 각 화폐 단위로 나누었을 때 몫과 나머지 출력
         // 각 화폐 단위는 위와 같이 각각 변수로 선언 해주세요.
-        System.out.printf("5만원권 %d장\n", refund / curr50000);
-        System.out.printf("1만원권 %d장\n", refund / curr10000);
-        System.out.printf("5천원권 %d장\n", refund / curr5000);
-        System.out.printf("1천원권 %d장\n", refund / curr1000);
-        System.out.printf("5백원 %d개\n", refund / curr500);
+        System.out.printf("5만원권 %d장\n", refund / curr50000, refund % curr50000);
+        System.out.printf("1만원권 %d장\n", refund / curr10000, refund % curr10000);
+        System.out.printf("5천원권 %d장\n", refund / curr5000, refund % curr5000);
+        System.out.printf("1천원권 %d장\n", refund / curr1000, refund % curr1000);
+        System.out.printf("5백원 %d개\n", refund / curr500, refund % curr500);
     }
 }
